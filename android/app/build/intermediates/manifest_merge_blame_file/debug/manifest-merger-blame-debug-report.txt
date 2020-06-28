@@ -1,0 +1,220 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nearbyplaces"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:6:3-75
+11-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:6:20-73
+12    <uses-permission android:name="android.permission.INTERNET" /> <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->
+12-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:5:3-64
+12-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:5:20-62
+13    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+13-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:8:3-9:45
+13-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:8:20-70
+14    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+14-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:10:3-77
+14-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:10:20-75
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:11:3-72
+15-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:11:20-70
+16    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+16-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:12:3-71
+16-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:12:20-69
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:13:3-63
+17-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:13:20-61
+18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- These require runtime permissions on M -->
+18-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:14:3-77
+18-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:14:20-75
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:16:3-78
+19-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:16:20-76
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:17:3-76
+20-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:17:20-74
+21    <uses-permission android:name="android.permission.CAMERA" />
+21-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:18:3-62
+21-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:18:20-60
+22    <uses-permission android:name="android.permission.READ_CONTACTS" />
+22-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:19:3-69
+22-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:19:20-67
+23    <uses-permission android:name="android.permission.READ_CALENDAR" />
+23-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:20:3-69
+23-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:20:20-67
+24    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+24-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:21:3-70
+24-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:21:20-68
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:22:3-77
+25-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:22:20-75
+26    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+26-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:23:3-68
+26-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:23:20-66
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+27-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:24:3-78
+27-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:24:20-76
+28    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+28-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:25:3-26:45
+28-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:25:20-68
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->[com.facebook.flipper:flipper:0.33.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/ba85e5c610365242e2fd3b7d92141bb3/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+29-->[com.facebook.flipper:flipper:0.33.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/ba85e5c610365242e2fd3b7d92141bb3/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->[:expo-updates] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+30-->[:expo-updates] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+31    <uses-permission android:name="android.permission.STORAGE" />
+31-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+31-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+32-->[:expo-location] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+32-->[:expo-location] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+33    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+33-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+33-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+34    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+34-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+34-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+35
+36    <application
+36-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:28:3-52:17
+37        android:name="com.nearbyplaces.MainApplication"
+37-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:29:5-36
+38        android:allowBackup="false"
+38-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:33:5-32
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.1.0] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+41        android:icon="@drawable/nearbyplaces"
+41-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:31:5-42
+42        android:label="@string/app_name"
+42-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:30:5-37
+43        android:roundIcon="@drawable/nearbyplaces"
+43-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:32:5-47
+44        android:testOnly="true"
+45        android:theme="@style/AppTheme"
+45-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:34:5-36
+46        android:usesCleartextTraffic="true" >
+46-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/debug/AndroidManifest.xml:6:18-53
+47        <meta-data
+47-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:36:5-103
+48            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+48-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:36:16-67
+49            android:value="YOUR-APP-URL-HERE" />
+49-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:36:68-101
+50        <meta-data
+50-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:37:5-112
+51            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+51-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:37:16-68
+52            android:value="YOUR-APP-SDK-VERSION-HERE" />
+52-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:37:69-110
+53
+54        <activity
+54-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:38:5-50:16
+55            android:name="com.nearbyplaces.MainActivity"
+55-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:39:7-35
+56            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+56-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:41:7-84
+57            android:label="@string/app_name"
+57-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:40:7-39
+58            android:launchMode="singleTask"
+58-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:42:7-38
+59            android:theme="@style/Theme.App.SplashScreen"
+59-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:44:7-52
+60            android:windowSoftInputMode="adjustResize" >
+60-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:43:7-49
+61            <intent-filter>
+61-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:46:7-49:23
+62                <action android:name="android.intent.action.MAIN" />
+62-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:47:9-60
+62-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:47:17-58
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:48:9-68
+64-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:48:19-66
+65            </intent-filter>
+66        </activity>
+67        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+67-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:51:5-81
+67-->/Users/therealyusa/Documents/GitHub/NearbyPlaces/android/app/src/main/AndroidManifest.xml:51:15-79
+68
+69        <meta-data
+69-->[:unimodules-react-native-adapter] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
+70            android:name="org.unimodules.core.AppLoader#react-native-headless"
+70-->[:unimodules-react-native-adapter] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+71            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+71-->[:unimodules-react-native-adapter] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+72
+73        <provider
+73-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+74            android:name="expo.modules.filesystem.FileSystemFileProvider"
+74-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+75            android:authorities="com.nearbyplaces.FileSystemFileProvider"
+75-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+76            android:exported="false"
+76-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+77            android:grantUriPermissions="true" >
+77-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+78            <meta-data
+78-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-26:70
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
+80                android:resource="@xml/file_system_provider_paths" />
+80-->[:expo-file-system] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-67
+81        </provider>
+82
+83        <service
+83-->[:expo-location] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+84            android:name="expo.modules.location.services.LocationTaskService"
+84-->[:expo-location] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+85            android:exported="false" />
+85-->[:expo-location] /Users/therealyusa/Documents/GitHub/NearbyPlaces/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+86
+87        <activity
+87-->[com.google.android.gms:play-services-base:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/e41b9479de754c1e18ec117ba6eff158/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+88-->[com.google.android.gms:play-services-base:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/e41b9479de754c1e18ec117ba6eff158/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-base:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/e41b9479de754c1e18ec117ba6eff158/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.android.gms:play-services-base:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/e41b9479de754c1e18ec117ba6eff158/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+91
+92        <meta-data
+92-->[com.google.android.gms:play-services-basement:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/538c923db391206d2ff85e60a5617ed0/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+93            android:name="com.google.android.gms.version"
+93-->[com.google.android.gms:play-services-basement:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/538c923db391206d2ff85e60a5617ed0/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+94            android:value="@integer/google_play_services_version" />
+94-->[com.google.android.gms:play-services-basement:16.0.1] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/538c923db391206d2ff85e60a5617ed0/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+95
+96        <service
+96-->[androidx.room:room-runtime:2.1.0] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/54c074c5e39c1061cef77282dab65b2a/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+97            android:name="androidx.room.MultiInstanceInvalidationService"
+97-->[androidx.room:room-runtime:2.1.0] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/54c074c5e39c1061cef77282dab65b2a/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+98            android:exported="false" />
+98-->[androidx.room:room-runtime:2.1.0] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/54c074c5e39c1061cef77282dab65b2a/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+99        <service
+99-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+100            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+100-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+101            android:exported="false" />
+101-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+102        <service
+102-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+103            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+103-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+104            android:exported="false" />
+104-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+105        <service
+105-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+106            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+106-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+107            android:exported="false" />
+107-->[io.nlopez.smartlocation:library:3.2.11] /Users/therealyusa/.gradle/caches/transforms-2/files-2.1/b43a7d3884297d65ed6a44c5479488c3/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+108    </application>
+109
+110</manifest>
