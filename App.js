@@ -14,12 +14,28 @@ import {
 } from "react-native";
 import MapView from "react-native-maps";
 import GetLocation from "react-native-get-location";
-import { Colors, Keywords, MapStyle } from "./auto";
+import { Colors, Keywords, MapStyle, Images } from "./auto";
+{
+  /* Uncomment the following line to use Places API. */
+}
 import { googleAPIKey, placeType } from "./helpers/GooglePlacesAPI";
+{
+  /* Comment the following two lines to use Yelp Fusion API. */
+}
+import { yelpFusionAPIKey } from "./helpers/YelpFusionAPI";
+import axios from "react-native-axios";
 import NearbyPlaceItem from "./components/NearbyPlaceItem";
-import { Images } from "./auto/images";
 
 const { width, height } = Dimensions.get("window");
+
+{
+  /* Comment the following const to not use Yelp Fusion API. */
+}
+const config = {
+  headers: {
+    Authorization: "Bearer " + yelpFusionAPIKey,
+  },
+};
 
 const initialRegion = {
   latitude: 41.015137,
@@ -54,7 +70,13 @@ class App extends React.Component {
   // This arrow function will contain locations received from Google Places API.
   renderNearbyPlaces = (itemData) => {
     const info = itemData.item;
-    return <NearbyPlaceItem name={info.name} />;
+    return (
+      <NearbyPlaceItem
+        name={info.name}
+        // Comment the following line to use Places API, uncomment to use Yelp Fusion API.
+        image_url={info.image_url}
+      />
+    );
   };
 
   fetchNearbyPlaces = async () => {
@@ -73,61 +95,108 @@ class App extends React.Component {
     GetLocation.getCurrentPosition({
       enableHighAccuracy: true,
       timeout: 15000,
-    })
-      .then((location) => {
-        this.setState({
-          latitude: location.latitude,
-          longitude: location.longitude,
-        });
-
-        // Search within maximum 4 km radius.
-        let radius = 4 * 1000;
-
-        // const url =
-        //   "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +
-        //   latitude +
-        //   "," +
-        //   longitude +
-        //   "&radius=" +
-        //   radius +
-        //   "&key=" +
-        //   googleAPIKey;
-
-        const url =
-          "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +
-          location.latitude +
-          "," +
-          location.longitude +
-          "&radius=" +
-          radius +
-          "&type=" +
-          placeType +
-          "&key=" +
-          googleAPIKey;
-
-        fetch(url)
-          .then((res) => {
-            return res.json();
-          })
-          .then((res) => {
-            this.setState({
-              places: res.results.map((x) => ({
-                name: x.name,
-              })),
-            });
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      })
-      .catch((error) => {
-        const { code, message } = error;
-        console.warn(code, message);
+    }).then((location) => {
+      this.setState({
+        latitude: location.latitude,
+        longitude: location.longitude,
       });
+
+      {
+        /* Comment the following lines to use Places API, uncomment to use Yelp Fusion API. */
+      }
+      // Set radius from current location as 4 km.
+      const radius = 4000;
+      // Set limit for number of places as 20.
+      const limit = 20;
+
+      return axios
+        .get(
+          "https://api.yelp.com/v3/businesses/search?term=delis&latitude=" +
+            location.latitude +
+            "&longitude=" +
+            location.longitude +
+            "&radius=" +
+            radius +
+            "&limit=" +
+            limit,
+          config
+        )
+        .then((place) => {
+          // Get places’ names and images.
+          this.setState({
+            places: place.data.businesses.map((x) => ({
+              name: x.name,
+              image_url:
+                x.image_url === ""
+                  ? "https://img.icons8.com/fluent/1024/000000/error.png"
+                  : x.image_url,
+            })),
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      {
+        /* Comment the following lines to use Places API, uncomment to use Yelp Fusion API. */
+      }
+
+      {
+        /* Uncomment the following lines to use Places API, comment to use Yelp Fusion API. */
+      }
+      //   // Search within maximum 4 km radius.
+      //   let radius = 4 * 1000;
+
+      //   // const url =
+      //   //   "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +
+      //   //   latitude +
+      //   //   "," +
+      //   //   longitude +
+      //   //   "&radius=" +
+      //   //   radius +
+      //   //   "&key=" +
+      //   //   googleAPIKey;
+
+      //   const url =
+      //     "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +
+      //     location.latitude +
+      //     "," +
+      //     location.longitude +
+      //     "&radius=" +
+      //     radius +
+      //     "&type=" +
+      //     placeType +
+      //     "&key=" +
+      //     googleAPIKey;
+
+      //   fetch(url)
+      //     .then((res) => {
+      //       return res.json();
+      //     })
+      //     .then((res) => {
+      //       this.setState({
+      //         places: res.results.map((x) => ({
+      //           name: x.name,
+      //         })),
+      //       });
+      //     })
+      //     .catch((error) => {
+      //       console.log(error);
+      //     });
+      // })
+      // .catch((error) => {
+      //   const { code, message } = error;
+      //   console.warn(code, message);
+      // });
+      {
+        /* Uncomment the following lines to use Places API, comment to use Yelp Fusion API. */
+      }
+    });
   };
 
   render() {
     const { places } = this.state;
+
+    console.log("PLACES: ", places);
 
     return (
       <SafeAreaView style={styles.container}>
